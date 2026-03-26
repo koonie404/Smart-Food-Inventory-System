@@ -14,6 +14,12 @@ Real-time Food Inventory Management & Monitoring System using YOLOv8 & HSV Analy
 
 기존의 인력 중심 수동 확인 방식은 대응 지연과 불필요한 인건비를 발생시킵니다. 본 프로젝트는 카메라 기반 실시간 자동 감지 및 리필 알림 서비스를 통해 식자재 낭비를 최소화하고 고객 만족도를 극대화하는 것을 목표로 합니다.
 
+## 🛡️ 핵심 강점 (Key Strengths & Data Reliability)
+- **높은 데이터 신뢰성:** 5-Frame Moving Average Filter를 적용하여 배식 중 집게나 손에 의한 일시적 가림(Occlusion) 현상에도 안정적인 수치 유지.
+- **정밀한 잔량 분석:** 조명 변화에 강한 HSV 색 공간 마스킹을 활용하여 접시 내부의 음식 영역만 픽셀 단위로 정확히 산출.
+- **실시간 데이터 자산화:** 분석된 모든 재고 상태를 CSV 로그로 자동 저장하여 향후 메뉴 선호도 분석 및 수요 예측 데이터로 활용 가능.
+
+  
 🎥 프로젝트 시연 (Demo Video)
 
 
