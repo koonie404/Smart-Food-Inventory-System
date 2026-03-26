@@ -108,7 +108,7 @@ Step 3. Result
 6. 설치 및 실행 (Setup & Usage)
 
 # 저장소 복제
-git clone [[https://github.com/YourUsername/Smart-Food-Monitoring.git](https://github.com/YourUsername/Smart-Food-Monitoring.git)](https://github.com/koonie404/Smart-Food-Inventory-System.git)
+git clone (https://github.com/koonie404/Smart-Food-Inventory-System.git)
 
 # 가상환경 설정 및 패키지 설치
 pip install -r requirements.txt
