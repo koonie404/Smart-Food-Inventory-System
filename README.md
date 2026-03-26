@@ -37,15 +37,14 @@ https://github.com/user-attachments/assets/120e137c-fdd2-4e64-9aa0-03207572560f
 
 2. 시스템 아키텍처 (System Architecture)
 
-🛠 개발 환경 (Development Environment)
+### 🛠 개발 환경 및 성능 (Environment & Performance)
+- **Language:** Python
+  
+- **AI Models:** YOLOv8 Nano (경량화 모델로 실시간성 확보)
 
-Language: Python
+- **Model Performance:** **mAP50 기준 89.2% 달성** (학습 결과 기준)
 
-AI Models: YOLOv8 (Ultralytics)
-
-Tools: Roboflow, Google Colab, OpenCV
-
-Library: Numpy, Pandas, Matplotlib
+- **Tools:** Roboflow, Google Colab, OpenCV
 
 📐 아키텍처 구조
 
@@ -66,9 +65,9 @@ Output: 실시간 시각화(Enough / Prepare / REFill) 및 CSV 데이터 로깅.
 
 단순한 객체 탐지를 넘어, 비지도 학습 기반의 영상 처리를 결합하여 정밀도를 높였습니다.
 
-HSV Masking: 조명 변화에 강인한 HSV 색 공간을 활용하여 음식 영역 분리.
-
-Adaptive Threshold: 접시별 독립적인 ROI 추출 및 픽셀 비율 계산.
+- **HSV Masking (강점):** 단순한 픽셀 카운팅이 아니라, 조명 변화에 강인한 **HSV 색 공간**을 활용하여 식판의 반사광 노이즈를 최소화하고 순수 음식 영역만 정밀하게 추출함.
+  
+- **Adaptive Threshold:** 접시별 독립적인 ROI 추출 및 픽셀 비율 계산.
 
 3.2 신뢰성 최적화 (Reliability Optimization)
 
