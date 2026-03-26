@@ -52,7 +52,7 @@ Detection: YOLOv8 모델이 접시(Plate) 위치를 실시간 검출.
 
 Analysis: 검출된 영역(ROI) 내 HSV 색상 분석을 통한 음식 잔량 계산.
 
-Output: 실시간 시각화(Enough / Prepare / Fill) 및 CSV 데이터 로깅.
+Output: 실시간 시각화(Enough / Prepare / REFill) 및 CSV 데이터 로깅.
 
 3. 핵심 알고리즘 (Key Algorithms)
 
@@ -66,9 +66,10 @@ Adaptive Threshold: 접시별 독립적인 ROI 추출 및 픽셀 비율 계산.
 
 3.2 신뢰성 최적화 (Reliability Optimization)
 
-Smoothing Filter: 배식 중 집게나 손에 의한 일시적 가림 현상을 방지하기 위해 5프레임 이동 평균 필터를 적용하여 수치 안정화.
+Smoothing Filter: 배식 중 집게나 사람의 손에 의해 접시가 일시적으로 가려지는 현상(Occlusion)을 방지하기 위해 
+5프레임 이동 평균 필터를 적용하여 잔량 수치의 급격한 변화를 막고 안정화함.
 
-Multi-ID Tracking: 각 접시에 고유 ID를 부여하여 개별적인 리필 상태 추적.
+Multi-ID Tracking: 각 접시에 고유 ID를 부여하여 개별적인 리필 상태를 추적함으로써 데이터가 뒤섞이지 않도록 신뢰성을 확보함.
 
 4. 실행 결과 (Results)
 
