@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/69ef3c78-f7ba-4e84-9aa1-2c10a1d3505c
 🥗 Vision AI 기반 스마트 푸드 재고 관리 및 모니터링 시스템
 
 Real-time Food Inventory Management & Monitoring System using YOLOv8 & HSV Analysis
